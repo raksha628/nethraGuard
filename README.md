@@ -1,3 +1,4 @@
+# heyy, this is new frontend for 2nd prototype
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
