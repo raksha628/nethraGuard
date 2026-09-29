@@ -641,46 +641,46 @@ const Overview: React.FC = () => {
               >
                 <CartesianGrid
                   strokeDasharray="3 3"
-                  stroke="#1e293b"
+                  stroke="#282D35"
                   vertical={false}
                 />
                 <XAxis
                   dataKey="feature"
-                  tick={{ fill: '#64748b', fontSize: 10 }}
-                  axisLine={{ stroke: '#1e293b' }}
+                  tick={{ fill: '#737A85', fontSize: 10 }}
+                  axisLine={{ stroke: '#282D35' }}
                   tickLine={false}
                 />
                 <YAxis
-                  tick={{ fill: '#64748b', fontSize: 10 }}
+                  tick={{ fill: '#737A85', fontSize: 10 }}
                   axisLine={false}
                   tickLine={false}
                   domain={[0, 1]}
                   tickFormatter={(v) => v.toFixed(1)}
                 />
-                <Tooltip content={<DistTooltip />} cursor={{ fill: 'rgba(148,163,184,0.05)' }} />
+                <Tooltip content={<DistTooltip />} cursor={{ fill: 'rgba(115,122,133,0.05)' }} />
                 <Legend
-                  wrapperStyle={{ fontSize: '10px', color: '#94a3b8', paddingTop: '12px' }}
+                  wrapperStyle={{ fontSize: '10px', color: '#8E959F', paddingTop: '12px' }}
                   iconType="square"
                   iconSize={8}
                 />
                 <ReferenceLine
                   y={0.2}
-                  stroke="#ef4444"
+                  stroke="#C85C5C"
                   strokeDasharray="4 3"
                   strokeOpacity={0.6}
-                  label={{ value: 'Threshold', fill: '#ef4444', fontSize: 9, position: 'insideTopRight' }}
+                  label={{ value: 'Threshold', fill: '#C85C5C', fontSize: 9, position: 'insideTopRight' }}
                 />
                 <Bar
                   dataKey="baseline"
                   name="Baseline"
-                  fill="#334155"
+                  fill="#59616D"
                   radius={[2, 2, 0, 0]}
                   maxBarSize={28}
                 />
                 <Bar
                   dataKey="current"
                   name="Current"
-                  fill="#f59e0b"
+                  fill="#D6A84F"
                   radius={[2, 2, 0, 0]}
                   maxBarSize={28}
                   fillOpacity={0.85}

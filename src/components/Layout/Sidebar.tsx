@@ -24,9 +24,9 @@ const navItems = [
 
 const Sidebar: React.FC = () => {
   return (
-    <aside className="w-56 bg-slate-900 border-r border-slate-800 flex flex-col h-full shrink-0">
+    <aside className="w-56 bg-sidebar border-r border-sidebar-border flex flex-col h-full shrink-0">
       {/* Logo */}
-      <div className="h-16 flex items-center px-5 border-b border-slate-800 gap-2.5">
+      <div className="h-16 flex items-center px-5 border-b border-sidebar-border gap-2.5">
         <ShieldCheck className="w-5 h-5 text-emerald-500 shrink-0" />
         <div>
           <div className="font-bold text-sm tracking-wide text-slate-100 leading-none">NETRA-Guard</div>
@@ -47,8 +47,8 @@ const Sidebar: React.FC = () => {
               `flex items-center px-3 py-2 text-sm font-medium rounded-sm transition-colors duration-100 gap-2.5
               ${
                 isActive
-                  ? 'bg-slate-800 text-blue-400'
-                  : 'text-slate-400 hover:bg-slate-800/50 hover:text-slate-200'
+                  ? 'bg-sidebar-active text-blue-400'
+                  : 'text-slate-400 hover:bg-sidebar-active/50 hover:text-slate-200'
               }`
             }
           >
@@ -59,7 +59,7 @@ const Sidebar: React.FC = () => {
       </nav>
 
       {/* Footer */}
-      <div className="p-4 border-t border-slate-800">
+      <div className="p-4 border-t border-sidebar-border">
         <div className="flex items-center justify-between mb-1.5">
           <span className="text-[10px] font-mono text-slate-500 tracking-wider">LOCAL / OFFLINE</span>
           <Wifi className="w-3.5 h-3.5 text-emerald-500" />

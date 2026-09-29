@@ -13,7 +13,7 @@ const TopBar: React.FC = () => {
   const latestRun = MOCK_RUNS[MOCK_RUNS.length - 1];
 
   return (
-    <header className="h-14 border-b border-slate-800 bg-slate-900/80 backdrop-blur flex items-center justify-between px-6 shrink-0 gap-4">
+    <header className="h-14 border-b border-sidebar-border bg-sidebar/80 backdrop-blur flex items-center justify-between px-6 shrink-0 gap-4">
       {/* Left: workspace + run */}
       <div className="flex items-center gap-5 text-sm min-w-0">
         <div className="flex flex-col min-w-0">
